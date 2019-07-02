@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head> 
-		<link rel="stylesheet" type="text/css" href="introHCI.css">.
-	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
 <body>
-	
+
 <!-- Header -->
 <div class="header">
   <h1>Emmanuel Respicio</h1>
-	
-  <a href="project.html">
-				<img src="images/Photography.jpeg" alt="Emman" style="width: 100%; height: 100%;">
-				<p>Photography</p>
-			</a>
+  <p>.</p>
 </div>
 
 <!-- Photo Grid -->
@@ -49,9 +97,3 @@
     <img src="images/trees.jpg" style="width:100%">
     <img src="images/sweetescape-manila-photography-6b6ca2ab9f0.jpg" style="width:100%">
     <img src="images/1084076_0f91.jpg" style="width:100%">
-							 
-  </div>
-</div>
-</head>
-</body>
-</html>
