@@ -32,7 +32,7 @@
 }
 
 .gallery-section h1{
-  text-align: center;
+  text-align: auto;
   text-transform: uppercase;
   color: #333;
 }
