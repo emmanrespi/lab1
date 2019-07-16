@@ -3,162 +3,58 @@
 <html>
 <body>
 
-<!-- MAIN (Center website) -->
-<div class="main">
-
-<h1>Jhed Ross Steven C. Bunagan</h1>
-<hr>
-
-<h2>What do I like to do.</h2>
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('Sports')"> Sports</button>
-  <button class="btn" onclick="filterSelection('Motorcycle')"> Motorcycle</button>
-  <button class="btn" onclick="filterSelection('Theater')"> Theater</button>
+ <div class="header">
+  <h1>I am Emmanuel Respicio</h1>
+  <p>And I love taking pictures</p>
+  <img src="img/9.jpg" alt="Avatar" class="avatar">
+  <img src="images/9.jpg" alt="Avatar" class="avatar">
 </div>
+  <body>
 
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  
-  <div class="column Sports">
-    <div class="content">
-      <img src="/images/IMG_2140[1].JPG" alt="Basketball" style="width:100%">
-      <h4>Basketball</h4>
-      <p>I love to play basketball. Which is one of my main hobbies. </p>
-    </div>
-  </div>
-  <div class="column Sports">
-    <div class="content">
-    <img src="/images/IMG_1481[1].JPG" alt="Trail Bike" style="width:100%">
-      <h4>Biking</h4>
-      <p>I enjoy riding a bike and to feel the wind. </p>
-    </div>
-  </div>
-  <div class="column Motorcycle">
-    <div class="content">
-    <img src="/images/motorcycle-jawa-42__1_.jpg" alt="Lights" style="width:100%">
-      <h4>Classic Bike</h4>
-      <p>Take me to classic bikes. </p>
-    </div>
-  </div>
-  <div class="column Motorcycle">
-    <div class="content">
-    <img src="/images/IMG_2048[1].JPG" alt="Nature" style="width:100%">
-      <h4>Ride with friends</h4>
-      <p>Since I was a kid riding on the motorcycles is what I like.</p>
-    </div>
-  </div>
-  
-  <div class="column Motorcycle">
-    <div class="content">
-      <img src="/images/Classic-Motorcycle-Mecca-Brough-Superior-Motorcycle-Museum-Invercargill.jpg" alt="Motor" style="width:100%">
-      <h4>Retro</h4>
-      <p>I found it cool when I see a retro or old school bikes. </p>
-    </div>
-  </div>
- 
-  <div class="column Sports">
-    <div class="content">
-    <img src="/images/IMG_2243[1].JPG" alt="Car" style="width:100%">
-      <h4>Bike ride</h4>
-      <p>Late road trip Bike. "Whoop Whoop"</p>
-    </div>
-  </div>
+@@ -28,32 +28,32 @@ <h1>My Gallery</h1>
+            <img src="images/1.jpg" alt="">
+          </a>
 
-  <div class="column Motorcycle">
-    <div class="content">
-      <img src="/images/IMG_E0251[1].JPG" alt="motorcycle" style="width:100%">
-      <h4>Ride and Coffee</h4>
-      <p>Within the troad trip, one of my destiniation is a coffee shop where I can have a cup of coffe and relax at the same time.</p>
-    </div>
-  </div>
-  
-   <div class="column Theater">
-    <div class="content">
-      <img src="/images/IMG_1455[1].JPG" alt="motorcycle" style="width:100%">
-      <h4>Teatré Phileo </h4>
-      <p>I'm a part of Theater guild in NU-Asia Pacific College.</p>
-    </div>
-  </div>
-  
-  <div class="column Theater">
-    <div class="content">
-      <img src="/images/IMG_1477[1].JPG" alt="motorcycle" style="width:100%">
-      <h4>TVC</h4>
-      <p>I encountered as a talent model for Nip's Television Commercial (TVC).</p>
-    </div>
-  </div>
-  
-  <div class="column Theater">
-    <div class="content">
-    <img src="/images/IMG_2474[1].JPG" alt="Car" style="width:100%">
-      <h4>Summer Acting Workshop </h4>
-      <p>In the middle of summer I take the chance to join thw Summer Acting workshop in Teatré Phileo.</p>
-    </div>
-  </div>
-  
-   <div class="column Sports">
-    <div class="content">
-    <img src="/images/IMG_2399[1].JPG" alt="Car" style="width:100%">
-      <h4>Basketball</h4>
-      <p>Every time I play basketball. I thing of this is my last time of playing.</p>
-    </div>
-  </div>
-  
-  
-  
-<!-- END GRID -->
-</div>
+          <a href="img/2.jpg" class="image">
+            <img src="img/2.jpg" alt="">
+          <a href="images/2.jpg" class="image">
+            <img src="images/2.jpg" alt="">
+          </a>
 
-<!-- END MAIN -->
-</div>
+          <a href="img/3.jpg" class="image">
+            <img src="img/3.jpg" alt="">
+          <a href="images/3.jpg" class="image">
+            <img src="images/3.jpg" alt="">
+          </a>
 
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+          <a href="img/4.jpg" class="image">
+            <img src="img/4.jpg" alt="">
+          <a href="images/4.jpg" class="image">
+            <img src="images/4.jpg" alt="">
+          </a>
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+          <a href="img/5.jpg" class="image">
+            <img src="img/5.jpg" alt="">
+          <a href="images/5.jpg" class="image">
+            <img src="images/5.jpg" alt="">
+          </a>
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+          <a href="img/6.jpg" class="image">
+            <img src="img/6.jpg" alt="">
+          <a href="images/6.jpg" class="image">
+            <img src="images/6.jpg" alt="">
+          </a>
 
+          <a href="img/7.jpg" class="image">
+            <img src="img/7.jpg" alt="">
+          <a href="images/7.jpg" class="image">
+            <img src="images/7.jpg" alt="">
+          </a>
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
+          <a href="img/8.jpg" class="image">
+            <img src="img/8.jpg" alt="">
+          <a href="images/8.jpg" class="image">
+            <img src="images/8.jpg" alt="">
+          </a>
 
-</body>
-</html>
+        </div>
