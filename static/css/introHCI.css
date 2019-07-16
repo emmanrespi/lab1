@@ -4,13 +4,6 @@
   background: #1abc9c;
   color: white;
   font-size: 30px;
-  margin: 0;
-  padding: 0;
-	
-canvas {
-  background: #000;
-} 
-
 }
 .avatar {
   float: left;
